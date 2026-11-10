@@ -1,0 +1,6 @@
+# robots.txt for https://www.naseefugr.online/
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://www.naseefugr.online/sitemap.xml
