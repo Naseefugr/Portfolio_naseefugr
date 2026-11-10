@@ -874,12 +874,34 @@ button, input, textarea {
 }
 
 /*=============================================================
-  10. PORTFOLIO SECTION (#portfolio) - 3 FEATURED POSTERS
+  10. PORTFOLIO SECTION (#portfolio) - RECENT WORKS GRIDS
 =============================================================*/
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  margin-bottom: 32px;
+}
+
+.portfolio-grid:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.sp-img.contain-fit {
+  background-color: #f8fafc;
+}
+
+.sp-img.contain-fit img {
+  object-fit: contain;
+  padding: 18px;
 }
 
 .single-project {
@@ -1534,8 +1556,11 @@ textarea.form-control {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .portfolio-grid {
+  .portfolio-grid,
+  .portfolio-grid-2 {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin-bottom: 25px;
   }
 
   .timeline-wrapper {
@@ -1698,10 +1723,11 @@ textarea.form-control {
     font-size: 15px;
   }
 
-  .portfolio-grid {
+  .portfolio-grid,
+  .portfolio-grid-2 {
     grid-template-columns: 1fr;
     max-width: 380px;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     gap: 25px;
   }
 
@@ -1797,7 +1823,8 @@ textarea.form-control {
     font-size: 17px;
   }
 
-  .portfolio-grid {
+  .portfolio-grid,
+  .portfolio-grid-2 {
     max-width: 100%;
   }
 
